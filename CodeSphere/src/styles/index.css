@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Display&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.div-logo {
+    width: auto;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    min-width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.div-cabecalho ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.div-cabecalho li {
+    cursor: pointer;
+}
+
+.div-cabecalho ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    display: block;
+    padding: 5px 10px;
+}
+
+.div-cabecalho ul li a:hover {
+    color: #c5f6f0;
+    text-decoration: underline 3px;
+}
+
+/* conteudo */
+main {
+    flex: 1;
+    padding: 0 5%;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 500;
+    margin: 2% 0 5% 0;
+    line-height: 1.1;
+}
+
+.hoje {
+    color: #c5f6f0;
+    font-weight: 700;
+}
+
+.linha-branca {
+    border: 0;
+    height: 1px;
+    background-color: white;
+    margin: 0 0 40px 0;
+}
+
+.container-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 30px;
+    margin-left: 5%;
+    margin-bottom: 50px;
+}
+
+.seletores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+.seletor-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 250px;
+    flex-grow: 1;
+}
+
+label {
+    font-size: 1.2rem;
+    font-family: 'Arimo', sans-serif;
+}
+
+select {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #c5f6f0;
+    border: 1px solid #c5f6f0;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Arimo', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+select:hover {
+    background-color: rgba(197, 246, 240, 0.2);
+}
+
+select option {
+    background-color: #23254a;
+}
+
+.dropdown-icon {
+    margin-left: 8px;
+    color: #c5f6f0;
+}
+
+.botao-container {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.botao-praticar {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Arimo", sans-serif;
+    background-color: #08ad9b;
+    border-radius: 3px;
+    padding: 20px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-praticar:hover {
+    background-color: #0bc2ad;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    padding: 20px 5%;
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .botao-container {
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logo {
+        width: 180px;
+    }
+    .div-cabecalho ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 4rem;
+        margin: 10% 0;
+    }
+    .seletores {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .botao-praticar {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+}

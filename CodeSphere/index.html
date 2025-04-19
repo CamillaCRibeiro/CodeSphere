@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSphere | Início</title>
+    <link rel="shortcut icon" href="./src/images/fundo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="https://kit.fontawesome.com/df721bc31d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="div-logo">
+            <img class="logo" src="./src/images/logo.png" alt="Logo do CodeSphere">
+        </div>
+        <div class="div-cabecalho">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="./src/pages/sobre.html">Sobre nós</a></li>
+                <li><a href="#">Cronogramas</a></li>
+                <li><a href="#">Fórum</a></li>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>O que vamos <br>estudar <span class="hoje">hoje?</span></h1>
+        <hr class="linha-branca">
+        <div class="container-form">
+            <div class="seletores">
+                <div class="seletor-group">
+                    <label for="linguagem">Escolha uma linguagem</label>
+                    <select id="linguagem">
+                        <option value="javascript">Javascript</option>
+                        <option value="phyton">Python</option>
+                        <option value="java">Java</option>
+                        <option value="php">PHP</option>
+                        <option value="c">C</option>
+                        <option value="c#">C#</option>
+                        <option value="c++">C++</option>
+                    </select>
+                </div>
+                <div class="seletor-group">
+                    <label for="nivel">Seu nível de conhecimento</label>
+                    <select id="nivel">
+                        <option value="iniciante">Iniciante</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                </div>
+                <div class="seletor-group">
+                    <label for="cronograma">Intensidade do cronograma</label>
+                    <select id="cronograma">
+                        <option value="iniciante">Leve (3 conteúdos na semana)</option>
+                        <option value="intermediario">Intermediário (6 conteúdos na semana)</option>
+                        <option value="avancado">Intensivo (7+ conteúdos na semana)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="botao-container">
+                <a href="#" class="botao-praticar">Praticar</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
